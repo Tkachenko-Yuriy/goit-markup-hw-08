@@ -1,0 +1,26 @@
+//basa
+@import "./base/base";
+@import "./base/reset";
+
+//utils
+@import "./utils/variables";
+
+
+// layout
+@import "./layout/page-header";
+@import "./layout/hero-section";
+@import "./layout/features-section";
+@import "./layout/works-section";
+@import "./layout/teams-section";
+@import "./layout/customers-section";
+@import "./layout/footer-section"; 
+@import "./layout/portfolio";
+
+//components
+@import "./components/logo";
+@import "./components/filter";
+@import "./components/modal";
+
+
+// vendors
+@import "./vendors/visually-hidden"
