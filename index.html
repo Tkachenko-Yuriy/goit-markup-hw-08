@@ -424,10 +424,10 @@
         </div>
       </section>
       <!-- Regular customers -->
-      <!-- <section class="customers section">
+      <section class="customers section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="customers__wrap list">
+          <ul class="customers__list list">
             <li class="customers__item">
               <a class="customers__link" href="">
                 <svg class="customers__icon" width="106" height="60">
@@ -472,10 +472,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer -->
-    <!-- <footer >
+    <footer >
       <div class="footer container">
         <div class="footer__contacs">
           <a class="footer__logo" href="./index.html">
@@ -501,7 +501,7 @@
           </address>
         </div>
         <!-- join us -->
-        <!-- <div class="footer-socials">
+        <div class="footer-socials">
           <p class="footer-socials__text">Присоеденяйтесь</p>
           <ul class="footer-socials-list list">
             <li class="footer-socials__item">
@@ -559,7 +559,7 @@
           </ul>
         </div> -->
         <!-- Subscribe -->
-        <!-- <div class="footer__subscribe">
+        <div class="footer__subscribe">
           <h3 class="footer__subscribe-text">Подпишитесь на рассылку</h3>
           <form class="footer__subscribe-form">
             <label for="email">
@@ -572,10 +572,10 @@
               </svg>
             </button>
           </form>
-        </div> -->
-      <!-- </div> -->
-    </footer> -->
-    Modal window -->
+        </div> 
+      </div>
+    </footer>
+    <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-btn" type="button" data-modal-close>
@@ -637,56 +637,59 @@
       </div>
     </div>
     <!-- Мобильное меню -->
-    <!-- <div class="mobile__menu">
-      <nav class="mobile__menu-nav">
-        <ul class="mobile__menu-list list">
+    <!-- <div class="mobile-menu">
+      <div class="mobile-menu__container">
+        <nav class="mobile__menu-nav">
+          <ul class="mobile__menu-list list">
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link--current header__nav-link link " href="./index.html">Студия</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile__menu-contact list">
           <li class="mobile__menu-item">
-            <a class="mobile__menu-link--current header__nav-link link " href="./index.html">Студия</a>
+            <a class="mobile__menu-tel mobile__menu-contact-link link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
           </li>
           <li class="mobile__menu-item">
-            <a class="mobile__menu-link link" href="./portfolio.html">Портфолио</a>
+            <a class="mobile__menu-mail header__contact-link link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+              </a>
           </li>
-          <li class="mobile__menu-item">
-            <a class="mobile__menu-link link" href="">Контакты</a>
+          
+        </ul>
+        <ul class="mobile__socials-list list">
+          <li class="mobile__list-items">
+            <a class="mobile__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="instagram">Instagram
+            </a>
+          </li>
+          <li class="mobile__list-items">
+            <a class="mobile__link" href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer"
+              aria-label="twitter">Twitter
+            </a>
+          </li>
+          <li class="mobile__list-items">
+            <a class="mobile__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="facebook">Facebook
+            </a>
+          </li>
+          <li class="mobile__list-items">
+            <a class="mobile__link" href="https://ru.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              aria-label="linkedin">Linkedin
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="mobile__menu-contact list">
-        <li class="mobile__menu-item">
-          <a class="mobile__menu-tel mobile__menu-contact-link link" href="tel:+380961111111">
-            +38 096 111 11 11
-          </a>
-        </li>
-        <li class="mobile__menu-item">
-          <a class="mobile__menu-mail header__contact-link link" href="mailto:info@devstudio.com">
-            info@devstudio.com
-            </a>
-        </li>
-        
-      </ul>
-      <ul class="mobile__socials-list list">
-        <li class="mobile__list-items">
-          <a class="mobile__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-            aria-label="instagram">Instagram
-          </a>
-        </li>
-        <li class="mobile__list-items">
-          <a class="mobile__link" href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer"
-            aria-label="twitter">Twitter
-          </a>
-        </li>
-        <li class="mobile__list-items">
-          <a class="mobile__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
-            aria-label="facebook">Facebook
-          </a>
-        </li>
-        <li class="mobile__list-items">
-          <a class="mobile__link" href="https://ru.linkedin.com/" target="_blank" rel="noopener noreferrer"
-            aria-label="linkedin">Linkedin
-          </a>
-        </li>
-      </ul>
+      </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
