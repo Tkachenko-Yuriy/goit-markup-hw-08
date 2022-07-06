@@ -58,6 +58,12 @@
               </li>
             </ul>
           </div>
+          <button class="mobile__menu-btn" type="button" data-menu-button aria-expanded="false">
+            <svg class="mobile__menu-icon" width="24" height="24">
+                    <use class="mobile__menu-icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="mobile__menu-icon-close" href="./images/icons.svg#icon-close"></use>
+                  </svg>
+          </button>
       </div>
     </header>
     <main>
@@ -557,7 +563,7 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
         <!-- Subscribe -->
         <div class="footer__subscribe">
           <h3 class="footer__subscribe-text">Подпишитесь на рассылку</h3>
@@ -637,12 +643,12 @@
       </div>
     </div>
     <!-- Мобильное меню -->
-    <!-- <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="mobile-menu__container">
         <nav class="mobile__menu-nav">
           <ul class="mobile__menu-list list">
             <li class="mobile__menu-item">
-              <a class="mobile__menu-link--current header__nav-link link " href="./index.html">Студия</a>
+              <a class="mobile__menu-link mobile__menu-link--current link " href="./index.html">Студия</a>
             </li>
             <li class="mobile__menu-item">
               <a class="mobile__menu-link link" href="./portfolio.html">Портфолио</a>
@@ -659,36 +665,36 @@
             </a>
           </li>
           <li class="mobile__menu-item">
-            <a class="mobile__menu-mail header__contact-link link" href="mailto:info@devstudio.com">
+            <a class="mobile__menu-mail mobile__menu-contact-link link" href="mailto:info@devstudio.com">
               info@devstudio.com
               </a>
           </li>
           
         </ul>
         <ul class="mobile__socials-list list">
-          <li class="mobile__list-items">
-            <a class="mobile__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          <li class="mobile__socials-items">
+            <a class="mobile__socials-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
               aria-label="instagram">Instagram
             </a>
           </li>
-          <li class="mobile__list-items">
-            <a class="mobile__link" href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer"
+          <li class="mobile__socials-items">
+            <a class="mobile__socials-link" href="https://twitter.com/?lang=ru" target="_blank" rel="noopener noreferrer"
               aria-label="twitter">Twitter
             </a>
           </li>
-          <li class="mobile__list-items">
-            <a class="mobile__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          <li class="mobile__socials-items">
+            <a class="mobile__socials-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
               aria-label="facebook">Facebook
             </a>
           </li>
-          <li class="mobile__list-items">
-            <a class="mobile__link" href="https://ru.linkedin.com/" target="_blank" rel="noopener noreferrer"
+          <li class="mobile__socials-items">
+            <a class="mobile__socials-link" href="https://ru.linkedin.com/" target="_blank" rel="noopener noreferrer"
               aria-label="linkedin">Linkedin
             </a>
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
