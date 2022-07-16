@@ -14,4 +14,23 @@
   "liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**"],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ffff35" // change color only for the comment text
+        }
+      }
+      // {
+      //   "scope": ["punctuation.definition.comment"],
+      //   "settings": {
+      //     "fontStyle": "italic",
+      //     "foreground": "#ffff35" // change color only for the punctuation
+      //   }
+      // }
+    ]
+  }
 }

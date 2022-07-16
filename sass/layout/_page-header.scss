@@ -1,3 +1,12 @@
+.header {
+  padding: 10px 0;
+
+  @media screen and (min-width: 768px) {
+  padding: 0;
+  }
+}
+
+
 .header__main-nav {
   display: flex;
   align-items: center;
@@ -8,7 +17,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content:space-between ;
+    // justify-content: space-between;
     align-items: center;
   }
 }
@@ -19,38 +28,38 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-left: 88px;
-  }
+    outline: 1px solid teal;
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 93px;
-  }
 
-  &-item:not(:last-child) {
+    &-item:not(:last-child) {
     margin-right: 50px;
   }
+}
 
-  &-link {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--primary-text-color);
-    display: block;
-    padding: 32px 0px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    
   }
+}
+.header__nav-link {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  display: block;
+  padding: 32px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &-link:hover,
-  &-link:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
   }
 
-  &-link--current {
+  &--current {
     position: relative;
   }
 
-  &-link--current::after {
+  &--current::after {
     position: absolute;
     content: '';
     display: block;
@@ -69,23 +78,24 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    
-    margin-left: auto;
+    outline: 1px solid rgb(106, 255, 47);
+    // margin-left: auto;
+
     &-item:not(:last-child) {
       margin-bottom: 10px;
     }
-
+  }
     @media screen and (min-width: 1200px) {
       flex-direction: row;
-      margin-left: auto;
-
+      
       &-item:not(:last-child) {
-        margin-right: 50px;
+        margin-bottom: 0;
+        margin-right: 30px;
       }
     }
-
-    &-mail,
-    &-tel {
+  }
+.header__contact-mail,
+.header__contact-tel {
       display: flex;
       align-items: center;
       color: var(--text-color);
@@ -103,14 +113,14 @@
       }
     }
 
-    &-link:hover,
-    &-link:focus {
+.header__contact-link:hover,
+.header__contact-link:focus {
       color: var(--accent-color);
     }
 
-    &-icon {
+.header__contact-icon {
       display: inline-flex;
       margin-right: 10px;
     }
-  }
-}
+  
+

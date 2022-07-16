@@ -1,7 +1,7 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  // const header = document.querySelector("#header");
+
 
   menuBtnRef.addEventListener("click", () => {
     const expanded =
@@ -12,6 +12,6 @@
 
     mobileMenuRef.classList.toggle("is-open");
 
-    // header.style = "position: relative";
+    
   });
 })();
