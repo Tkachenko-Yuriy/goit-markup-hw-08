@@ -29,8 +29,14 @@
   padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: var(--shadow-modal-window);
-  transform: scale(1) translate(-50%, -50%) rotate(360deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  transform: translate(-50%, -50%) scale(1) ;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.1);
+    
+    }
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;

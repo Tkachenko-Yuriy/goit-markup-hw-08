@@ -126,6 +126,7 @@ footer {
 }
 .header__nav-link--current {
   position: relative;
+  color: var(--accent-color);
 }
 .header__nav-link--current::after {
   position: absolute;
@@ -284,11 +285,15 @@ footer {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 30px;
+  text-align: center;
+  max-width: 360px;
+  height: auto;
 }
 @media screen and (min-width: 1200px) {
   .hero-section__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 .hero-section__btn {
@@ -683,6 +688,9 @@ footer {
 @media screen and (min-width: 1200px) {
   .footer__contacs {
     margin-right: 70px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .footer__address {
@@ -700,6 +708,13 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .footer__address-link {
   color: var(--primary-white-color);
@@ -737,10 +752,17 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .footer-socials__text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin: 0 0 20px;
@@ -900,10 +922,14 @@ footer {
             justify-content: start;
   }
 }
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .portfolio__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 2);
         flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1129,12 +1155,14 @@ footer {
   background-color: var(--primary-white-color);
   -webkit-box-shadow: var(--shadow-modal-window);
           box-shadow: var(--shadow-modal-window);
-  -webkit-transform: scale(1) translate(-50%, -50%) rotate(360deg);
-          transform: scale(1) translate(-50%, -50%) rotate(360deg);
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.1);
+          transform: translate(-50%, -50%) scale(0.1);
 }
 @media screen and (min-width: 1200px) {
   .modal {

@@ -38,6 +38,8 @@
     }
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
+      align-items: flex-start;
+      
     }
   }
   &__address {
@@ -49,6 +51,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      
+    }
 
     &-link {
       color: var(--primary-white-color);

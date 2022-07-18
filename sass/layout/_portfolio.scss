@@ -1,6 +1,7 @@
 .portfolio {
   &__list {
     display: block;
+    
     @media screen and (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -13,8 +14,14 @@
   }
 
   &__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * 30px) / 2);
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
