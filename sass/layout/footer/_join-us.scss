@@ -6,8 +6,8 @@
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
   }
-
-  &__text {
+}
+.footer-socials__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -16,14 +16,14 @@
     margin: 0 0 20px;
   }
 
-  &-list {
+.footer-socials__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
 
-  &__link {
+.footer-socials__link {
     display: inline-flex;
     fill: var(--primary-white-color);
     width: 44px;
@@ -33,10 +33,10 @@
     background-color: var(--footer-icon-bg);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  
 
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     fill: var(--section-team-color);
     background-color: var(--accent-color);
     box-shadow: var(--shadow-footer-icon);

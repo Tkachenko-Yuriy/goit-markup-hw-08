@@ -1,4 +1,4 @@
-.header__logo {
+.logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -6,13 +6,19 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    }
+}
+
+
+.header__logo {
+   @media screen and (min-width: 768px) {
     margin-right: 87px;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
     margin-right: 93px;
   }
 
@@ -25,12 +31,8 @@
 }
 
 .footer__logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
   margin-bottom: 20px;
+  
   &-icon {
     color: var(--accent-color);
   }

@@ -1,10 +1,9 @@
-//basa
-@import "./base/base";
-@import "./base/reset";
-
 //utils
 @import "./utils/variables";
 
+//basa
+@import "./base/base";
+@import "./base/reset";
 
 // layout
 @import "./layout/page-header";
@@ -20,6 +19,7 @@
 
 //components
 @import "./components/logo";
+@import "./components/button";
 @import "./components/filter";
 @import "./components/modal";
 @import "./components/mobile-menu";

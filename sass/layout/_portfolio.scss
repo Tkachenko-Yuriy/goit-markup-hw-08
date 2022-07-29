@@ -12,8 +12,8 @@
       justify-content: start;
     }
   }
-
-  &__item {
+}
+.portfolio__item {
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -39,12 +39,12 @@
       transform: translateY(0);
     }
   }
-  &__link {
+.portfolio__link {
     display: flex;
     height: 100%;
     flex-direction: column;
   }
-}
+
 
 .thumb {
   position: relative;
